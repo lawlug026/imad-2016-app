@@ -29,7 +29,7 @@ app.get('/submit-name/:name', function(req, res){
     //get the current name from the request
     
     var name=req.params.name;//1000 extract the name value
-    names.push('name');
+    names.push(name);
     //JSON=Javascript Object Notation
     res.send(JSON.stringify(names));
     }
