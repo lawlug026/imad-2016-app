@@ -14,9 +14,9 @@ var maintext=document.getElementById("mainBody");
 
 //Counter Button
 
-var counterButton=document.getElementById("counter");
-var counterc=0;
-counterButton.onClick = function(){
+var button=document.getElementById("counter");
+var counter=0;
+button.onClick = function(){
     //Make a request to counter endpoint
 
     
@@ -24,9 +24,9 @@ counterButton.onClick = function(){
 
     
     //render the variable to the current span
-    counterc=counterc+1;
+    counter=counter+1;
     var span=document.getElementById("count");
-    span.innerHTML=counterc.toString();
+    span.innerHTML=counter.toString();
     
     
 };
