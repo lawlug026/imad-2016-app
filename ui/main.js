@@ -13,6 +13,7 @@ var maintext=document.getElementById("mainBody");
 
 
 //Counter Button
+var counter=0;
 var counterButton=document.getElementById("counter");
 counterButton.onClick= function(){
     //Make a request to counter endpoint
