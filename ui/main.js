@@ -23,7 +23,7 @@ counterButton.onClick= function(){
 
     
     //render the variable to the current span
-    counterc=1+counterc;
+    counterc=counterc+1;
     var span=document.getElementById('count');
     span.innerHTML=counterc.toString();
     
