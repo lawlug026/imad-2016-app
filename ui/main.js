@@ -17,19 +17,31 @@ var maintext=document.getElementById("mainBody");
 var button=document.getElementById('counter');
 
 
-var counter=89;
+
 
 var func=function(){
-    //Make a request to counter endpoint
+    //Create a request to counter endpoint
+    var request=new XMLHttpRequest();
 
     
     //Capture the response & store it in a variable
-
+    request.onreadystatechange = function(){
+      if(request.readyState===XMLHttpRequest.DONE){
+          //Take sone action
+          if(request.status==200)
+          {
+              var counter=request.responseText;
+               var span=document.getElementById('count');
+                span.innerHTML=counter.toString();
+          }
+          
+      }  
+    };
     
-    //render the variable to the current span
-    counter=counter+1;
-    var span=document.getElementById('count');
-    span.innerHTML=counter.toString();
+    //Make a request
+    request.open('GET', "http://lawlug026.imad.hasura-app.io/counter", true)
+    request.send(null);
+   
     
     
-}
+};
