@@ -1,29 +1,19 @@
-
 /*
-
 //Moving the image
 var marginLeft=0;
 var moveRight=function(){marginLeft+=1; img.style.marginLeft=marginLeft+"px";};
 var img=document.getElementById('madi');
 img.onclick=function(){var interval=setInterval(moveRight, 20);
 };
-
 var maintext=document.getElementById("mainBody");
 */
-
-
+//-------------------------------------------------------------------------------
 //Counter Button
 
 var button=document.getElementById('counter');
-
-
-
-
 var func=function(){
     //Create a request to counter endpoint
     var request=new XMLHttpRequest();
-
-    
     //Capture the response & store it in a variable
     request.onreadystatechange = function(){
       if(request.readyState===XMLHttpRequest.DONE){
@@ -33,9 +23,9 @@ var func=function(){
               var counter=request.responseText;
                var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
-          }
+          } 
           
-      }  
+      }//not done yet  
     };
     
     //Make a request
@@ -45,3 +35,10 @@ var func=function(){
     
     
 };
+
+//-------------------------------------------------------------------------------
+//Input Button & listing content
+
+
+
+
