@@ -37,13 +37,20 @@ var func_click_me=function(){
 //Input Button & listing content
 
 
-var nameInput=document.getElementById('name');
-var name=nameInput.value;
+
 var submit=document.getElementById('submit');
 var funcsub=function(){
     console.log("submit is pressed");
-    //make a request & send a name
-    var names=['abhay', 'santosh'];
+    
+     var request=new XMLHttpRequest();
+    //Capture the response & store it in a variable
+    request.onreadystatechange = function(){
+      if(request.readyState===XMLHttpRequest.DONE){
+          //Take sone action
+          if(request.status==200)
+          {
+               var names=request.responseText;
+               names=JSON.parse(names);
     var list='';
     for(var i=0; i<names.length; i++)
     {
@@ -51,6 +58,18 @@ var funcsub=function(){
     }
     var ul=document.getElementById('listname');
     ul.innerHTML=list;
+          } 
+          
+      }//not done yet  
+    };
+    
+    //Make a request
+    var nameInput=document.getElementById('name');
+var name=nameInput.value;
+    request.open('GET', "http://lawlug026.imad.hasura-app.io/submit-name?name=" + name, true);
+    request.send(null);
+    //make a request & send a name
+    
     //capture a list of name & render it on the web page
 };
 
