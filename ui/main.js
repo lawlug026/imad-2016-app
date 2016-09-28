@@ -39,6 +39,10 @@ var func=function(){
 //-------------------------------------------------------------------------------
 //Input Button & listing content
 
+var funcsub=function(){
+    console.log("submit is pressed");
+};
+
 
 
 
