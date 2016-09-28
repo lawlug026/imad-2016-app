@@ -13,8 +13,9 @@ var maintext=document.getElementById("mainBody");
 
 
 //Counter Button
-var counterc=0;
+
 var counterButton=document.getElementById('counter');
+var counterc=0;
 counterButton.onClick = function(){
     //Make a request to counter endpoint
 
