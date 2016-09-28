@@ -14,7 +14,7 @@ var maintext=document.getElementById("mainBody");
 
 //Counter Button
 
-var button=document.getElementById("counter");
+var button=document.getElementById('counter');
 
 
 var counter=89;
