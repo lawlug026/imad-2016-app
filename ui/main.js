@@ -11,7 +11,7 @@ var maintext=document.getElementById("mainBody");
 //Counter Button
 
 var button=document.getElementById('counter');
-var func=function(){
+var func_click_me=function(){
     //Create a request to counter endpoint
     var request=new XMLHttpRequest();
     //Capture the response & store it in a variable
@@ -29,18 +29,28 @@ var func=function(){
     };
     
     //Make a request
-    request.open('GET', "http://lawlug026.imad.hasura-app.io/counter", true)
+    request.open('GET', "http://lawlug026.imad.hasura-app.io/counter", true);
     request.send(null);
-   
-    
-    
 };
 
 //-------------------------------------------------------------------------------
 //Input Button & listing content
 
+
+var nameInput=document.getElementById('name');
+var name=nameInput.value;
+var submit=document.getElementById('submit');
 var funcsub=function(){
     console.log("submit is pressed");
+    //make a request & send a name
+    var list=['abhay', 'santosh'];
+    for(var i=0; i<names.length; i++)
+    {
+        list+="<li>"+list[i]+"</li>";
+    }
+    var ul=document.getElementById('namelist');
+    ul.innerHTML=list;
+    //capture a list of name & render it on the web page
 };
 
 
