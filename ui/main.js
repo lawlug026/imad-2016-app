@@ -19,7 +19,7 @@ var button=document.getElementById('counter');
 
 var counter=89;
 
-button.onClick = function(){
+function func(){
     //Make a request to counter endpoint
 
     
@@ -32,4 +32,4 @@ button.onClick = function(){
     span.innerHTML=counter.toString();
     
     
-};
+}
