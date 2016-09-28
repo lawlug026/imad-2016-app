@@ -44,7 +44,7 @@ var funcsub=function(){
     console.log("submit is pressed");
     //make a request & send a name
     var list=['abhay', 'santosh'];
-    for(var i=0; i<names.length; i++)
+    for(var i=0; i<list.length; i++)
     {
         list+="<li>"+list[i]+"</li>";
     }
