@@ -56,8 +56,8 @@ var funcsub=function(){
     {
         list+="<li>"+names[i]+"</li>";
     }
-    var ul=document.getElementById('listname');
-    ul.innerHTML=list;
+    var ol=document.getElementById('listname');
+    ol.innerHTML=list;
           } 
           
       }//not done yet  
