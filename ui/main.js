@@ -19,7 +19,7 @@ var button=document.getElementById('counter');
 
 var counter=89;
 
-function func(){
+var func=function(){
     //Make a request to counter endpoint
 
     
