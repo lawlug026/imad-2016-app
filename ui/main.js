@@ -17,7 +17,7 @@ var maintext=document.getElementById("mainBody");
 var button=document.getElementById("counter");
 var span=document.getElementById('count');
 
-var counter=0;
+var counter=89;
 span.innerHTML=counter.toString();
 /*button.onClick = function(){
     //Make a request to counter endpoint
