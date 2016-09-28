@@ -15,11 +15,11 @@ var maintext=document.getElementById("mainBody");
 //Counter Button
 
 var button=document.getElementById("counter");
-var span=document.getElementById('count');
+
 
 var counter=89;
-span.innerHTML=counter.toString();
-/*button.onClick = function(){
+
+button.onClick = function(){
     //Make a request to counter endpoint
 
     
@@ -32,4 +32,4 @@ span.innerHTML=counter.toString();
     span.innerHTML=counter.toString();
     
     
-};*/
+};
