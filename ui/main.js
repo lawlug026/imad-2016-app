@@ -43,10 +43,11 @@ var submit=document.getElementById('submit');
 var funcsub=function(){
     console.log("submit is pressed");
     //make a request & send a name
-    var list=['abhay', 'santosh'];
-    for(var i=0; i<list.length; i++)
+    var names=['abhay', 'santosh'];
+    var list='';
+    for(var i=0; i<names.length; i++)
     {
-        list+="<li>"+list[i]+"</li>";
+        list+="<li>"+names[i]+"</li>";
     }
     var ul=document.getElementById('listname');
     ul.innerHTML=list;
