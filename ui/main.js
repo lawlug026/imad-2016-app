@@ -7,4 +7,3 @@ img.onclick=function(){var interval=setInterval(moveRight, 20);
 };
 
 var maintext=document.getElementById("mainBody");
-maintext.innerHTML=maintext;
