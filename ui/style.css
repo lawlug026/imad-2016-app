@@ -24,7 +24,8 @@ body {
 {
     max-width:800px;
     margin:0 auto;
-    color:grey;
+    color:white;
+    font-weight: bold;
     padding-left:200;
     text-align: center;
 }
