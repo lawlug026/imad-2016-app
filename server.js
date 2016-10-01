@@ -62,7 +62,7 @@ return HTMLTemplate;
 
 //additional url's
 app.get('/ui/article1.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'webpage1.html'));
+  res.send(createTemplate(article_one));
 });
 
 app.get('/ui/article2.html', function (req, res) {
