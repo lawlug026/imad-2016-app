@@ -18,6 +18,48 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+//Creating template
+var article_one={
+    title:'Article one',
+    content:`<p >
+                This is a new paragraph on my first web page. I want my page to be filled iwth some content. As i m new to web development, thats why, i have been so poor in formatting & alignment
+            </p>
+            
+            <hr width=200>
+            <p>
+                This is a new paragraph on my first web page. I want my page to be filled iwth some content. As i m new to web development, thats why, i have been so poor in formatting & alignment
+            </p>`
+};
+
+function createTemplate(data){
+    var title=data.title;
+    var content=data.content;
+    var HTMLTemplate=`<html>
+    <head>
+        <title>${title}</title>
+        <link href="/ui/style.css" rel="stylesheet" />
+            
+       
+    </head>
+    <body>
+        <H1 align='center'>This is the first heading of my web page</H1>
+        <br>
+        <hr width=100>
+        <div class='container'>
+            ${content}
+        </div>
+        
+    </body>
+</html>`;
+
+return HTMLTemplate;
+
+    `
+    
+}
+
+
+
 //additional url's
 app.get('/ui/article1.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'webpage1.html'));
