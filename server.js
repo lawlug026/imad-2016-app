@@ -54,7 +54,7 @@ function createTemplate(data){
 
 return HTMLTemplate;
 
-    `
+    
     
 }
 
