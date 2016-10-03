@@ -73,6 +73,8 @@ var name=nameInput.value;
     //capture a list of name & render it on the web page
 };
 
+ellipse(100, 100, 300, 300);
+
 
 
 
