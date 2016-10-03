@@ -32,10 +32,20 @@ body {
     padding-left:200;
 }
 
+.body
+{
+    max-width:800px;
+    border:1px solid black;
+    margin:0 auto;
+    color:white;
+    font-weight: bold;
+    padding-left:200;
+    text-align: left;
+}
 .container
 {
     max-width:800px;
-    border:10px solid black;
+    
     margin:0 auto;
     color:white;
     font-weight: bold;
