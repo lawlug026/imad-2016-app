@@ -65,6 +65,11 @@ app.get('/ui/article1.html', function (req, res) {
   res.send(createTemplate(article_one));
 });
 
+app.get('/webpage1.html', function (req, res) {
+  res.sendFile(path.join(_dirname, 'ui', 'webpage1.html'));
+});
+
+
 app.get('/ui/article2.html', function (req, res) {
   res.send('hi');
 });
