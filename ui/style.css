@@ -17,6 +17,7 @@ body {
 .image{
     margin:0 auto;
     padding-left:200;
+    max-width:800;
 }
 .text-big {
     font-size: 300%;
