@@ -38,11 +38,13 @@ body {
 .body
 {
     max-width:800px;
-    border:1px solid black;
+    border: 5px solid black;
+    border-top-style: dotted;
+    border-bottom-style: dashed;
     margin:0 auto;
     color:white;
     font-weight: bold;
-    padding-left:200;
+    padding-left: inherit;
     text-align: left;
 }
 .container
