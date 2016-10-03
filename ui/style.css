@@ -12,6 +12,10 @@ body {
     padding-right:200;
 }
 
+.image{
+    margin:0 auto;
+    padding-left:200;
+}
 .text-big {
     font-size: 300%;
 }
