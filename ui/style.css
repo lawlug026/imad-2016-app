@@ -7,10 +7,11 @@ body {
 .center {
     text-align: center;
     background-color: grey;
-    margin:0 auto;
+    margin:100 auto;
     padding-left:200;
     padding-right:200;
-    max-width:800px;
+    max-width:400;
+    
 }
 
 .image{
