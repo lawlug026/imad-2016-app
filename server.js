@@ -66,7 +66,7 @@ app.get('/ui/article1.html', function (req, res) {
 });
 
 app.get('/webpage1.html', function (req, res) {
-  res.sendFile(path.join(_dirname, 'ui', 'webpage1.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'webpage1.html'));
 });
 
 
