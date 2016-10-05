@@ -39,8 +39,7 @@ body {
 {
     max-width:800px;
     border: 5px solid black;
-    border-top-style: dotted;
-    border-bottom-style: dashed;
+  
     margin:0 auto;
     color:white;
     font-weight: bold;
